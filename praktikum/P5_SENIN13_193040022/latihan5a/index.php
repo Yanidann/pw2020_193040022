@@ -21,13 +21,13 @@
         table {
             margin : auto;
             text-align : center;
-            font-size : large;
+            font-size : x-large;
             background-color: grey;
 
         }
         img {
-            width : 70px;
-            height : 50px;
+            width : 100px;
+            height : 80px;
             border : 1px solid black;
         }
     </style>
