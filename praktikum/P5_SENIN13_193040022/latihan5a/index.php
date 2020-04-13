@@ -22,7 +22,7 @@
             margin : auto;
             text-align : center;
             font-size : x-large;
-            background-color: grey;
+            background-color: #9370DB;
 
         }
         img {
@@ -34,6 +34,7 @@
 </head>
 <body>
     <div class = "container">
+        <h1><center>DAFTAR MAKANAN</center></h1>
         <table cellpadding  = "10" cellspacing = "0" border = "1">
             <tr>
                 <th>No.</th>
