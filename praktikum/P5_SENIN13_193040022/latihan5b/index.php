@@ -18,7 +18,7 @@
             margin : auto;
             text-align : center;
             font-size : x-large;
-            background-color: #BC8F8F;
+            background-color: #9370DB;
 
         }
         img {
