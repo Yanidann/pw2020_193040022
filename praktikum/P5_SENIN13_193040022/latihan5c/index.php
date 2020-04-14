@@ -15,42 +15,39 @@
 
     <style>
         .container {
-            border : 5px solid seagreen;
-            width : 580px;
+            border : 4px solid #191970; /* midnight blue */
+            background-color: #48D1CC; /* medium turquoise */
+            width : 300px;
             height: 300px;
-            padding-top: 10px;
-            padding-left: 10px;
-            border-radius: 30px;
             margin : auto;
-            font-size: x-large;
+            padding : 30px 0 20px 20px;
             font-family : arial;
-            background-color: black;
+            font-size: x-large;
         }
-        a:active{
-            text-decoration: none;
-            color : magenta;
+        a:link {
+            color : #0000CD; /* medium blue */
         }
-        a:link{
+        a:hover {
             text-decoration: none;
-            color : salmon;
+            color : #FFFF00; /* yellow */
         }
-        a:hover{
+        a:active {
             text-decoration: none;
-            color : seagreen;
         }
     </style>
+    
 </head>
 <body>
     <h1><center>DAFTAR MAKANAN</center></h1>
         <div class = "container">
             <?php foreach ($makanan as $mkn) : ?>
                 <div class = "nama">
-                    <a href="php/detail.php?id=<?= $mkn['id']; ?>"> 
-                        <?= $mkn["nama makanan"]; ?>
-                    </a>
+                        <a href="php/detail.php?id=<?= $mkn['id']; ?>"> 
+                            <?= $mkn["nama makanan"]; ?>
+                        </a>
                 </div>
             <?php endforeach; ?>
         </div>
-    <h1><center>ANDA PUAS KAMI SENANG!!!</center></h1>
+    <h1><center>TERIMAKASIH SUDAH MEMESAN!</center></h1>
 </body>
 </html>

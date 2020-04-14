@@ -1,4 +1,4 @@
-<?php
+\<?php
     // Mengecaek apakah ada id yang dikirimkan
     // jika tidak maka akan dikembalikan ke halaman index.php
     if (!isset($_GET['id'])) {
@@ -20,43 +20,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan 5 C</title>
-    <style>
-    .container{
-        border : 2px solid seagreen;
-        width: 160px;
-        height : 300px;
-        text-align: center;
-        padding-top: 5px;
-        margin : auto;
-        background-color: salmon;
-        border-radius : 50px;
-        font-family: arial;
-    }
-    img {
-            width : 100px;
-            height : 80px;
-            border : 1px solid black;
-        }
-    }
-    button:hover, a:hover{
-        text-decoration: none;
-        color : magenta;
-    }
-    button:link, a:link{
-        text-decoration: none;
-        color : seagreen;
-    }
-    button:active, a:active{
-        text-decoration: none;
-        color: black;
-    }
+    <title>latihan5c</title>
+        <style>
+            .container {
+                border : 3px solid #4B0082; /* indigo */
+                background-color: #9370DB; /* medium purple */
+                width: 170px;
+                height : 270px;
+                margin : auto;
+                padding : 20px 0 20px 0;
+                text-align: center;
+                font-family: arial;
+                font-size: medium;
+            }
+            img {
+                border : 2px solid #4B0082; /* indigo */
+                width : 100px;
+                height : 70px;
+            }
+            button:link, a:link {
+                color : #0000CD; /* medium blue */
+            }
+            button:hover, a:hover {
+                text-decoration: none;
+                color : #48D1CC; /* medium turquoise */
+            }
+            button:active, a:active {
+                text-decoration: none;
+            }
     </style>
+
 </head>
 <body>
     <div class = "container">
         <div class="gambar">
-            <img src="../assets/img/<?= $mkn["gambar"];?>">
+            <img src="../assets/img/<?= $mkn["gambar"]; ?>" alt="">
         </div>
         <div class="keterangan">
             <p><?= $mkn ["nama makanan"]; ?></p>
