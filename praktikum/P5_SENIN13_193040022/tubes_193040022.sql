@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Apr 2020 pada 19.38
+-- Waktu pembuatan: 24 Apr 2020 pada 16.16
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.4
 
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `makanan` (
   `id` int(11) NOT NULL,
-  `nama makanan` char(35) NOT NULL,
-  `asal makanan` char(15) NOT NULL,
-  `bahan makanan` char(20) NOT NULL,
+  `nama` char(35) NOT NULL,
+  `asal` char(15) NOT NULL,
+  `bahan` char(20) NOT NULL,
   `harga` int(11) NOT NULL,
   `gambar` char(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -40,7 +40,7 @@ CREATE TABLE `makanan` (
 -- Dumping data untuk tabel `makanan`
 --
 
-INSERT INTO `makanan` (`id`, `nama makanan`, `asal makanan`, `bahan makanan`, `harga`, `gambar`) VALUES
+INSERT INTO `makanan` (`id`, `nama`, `asal`, `bahan`, `harga`, `gambar`) VALUES
 (1, 'Rendang', 'Sumatra Barat', 'Daging sapi', 15000, 'RendangDaging.jpg'),
 (2, 'Soto Ayam', 'Lamongan', 'Daging ayam', 15000, 'SotoAyam.jpg'),
 (3, 'Rawon', 'Jawa Timur', 'Daging sapi', 15000, 'Rawon.png'),
@@ -70,7 +70,7 @@ ALTER TABLE `makanan`
 -- AUTO_INCREMENT untuk tabel `makanan`
 --
 ALTER TABLE `makanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
