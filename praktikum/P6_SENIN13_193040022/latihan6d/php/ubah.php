@@ -25,11 +25,11 @@ if (isset($_POST['ubah'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>halaman tambah form</title>
+  <title>halaman ubah form</title>
 </head>
 
 <body>
-  <h3>Form Tambah Daftar Makanan</h3>
+  <h3>Form Ubah Daftar Makanan</h3>
   <form action="" method="post">
     <input type="hidden" name="id" id="id" value="<?= $m['id']; ?>">
     <ul>
