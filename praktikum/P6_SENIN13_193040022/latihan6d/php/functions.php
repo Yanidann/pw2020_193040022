@@ -62,14 +62,14 @@ function ubah($data)
     $harga = htmlspecialchars($data['harga']);
 
     $query = "UPDATE makanan
-            SET
-    nama = '$nama', 
-    asal = '$asal', 
-    bahan = '$bahan', 
-    harga = '$harga', 
-    gambar = '$gambar'
-    WHERE id = '$id'
-    ";
+              SET
+                nama = '$nama', 
+                asal = '$asal', 
+                bahan = '$bahan', 
+                harga = '$harga', 
+                gambar = '$gambar'
+                WHERE id = '$id'
+                ";
 
     mysqli_query($conn, $query);
 
