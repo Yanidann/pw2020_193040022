@@ -4,6 +4,10 @@ require 'php/functions.php';
 
 // melakukan query
 $makanan = query("SELECT * FROM makanan");
+
+if (isset($_POST['cari'])) {
+    $makanan = cari($_POST['keyword']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +55,24 @@ $makanan = query("SELECT * FROM makanan");
     <h1>
         <center>DAFTAR MAKANAN</center>
     </h1>
+
+    <form action="" method="POST">
+        <center><input type="text" name="keyword" size="20" placeholder="masukan pencarian.." autocomplete="off" autofocus>
+            <button type="submit" name="cari">Cari!</button></center>
+    </form>
+    <br>
+
     <div class="container">
+
+        <?php if (empty($makanan)) : ?>
+            <tr>
+                <td colspan="4">
+                    <h1 style="color: red; font-style: italic; font-size: large;">Data tidak ditemukan</h1>
+                </td>
+            </tr>
+        <?php endif; ?>
+
+
         <?php foreach ($makanan as $mkn) : ?>
             <div class="nama">
                 <a href="php/detail.php?id=<?= $mkn['id']; ?>">
@@ -63,6 +84,8 @@ $makanan = query("SELECT * FROM makanan");
     <h1>
         <center>TERIMAKASIH SUDAH MEMESAN!</center>
     </h1>
+
+    <a href="php/admin.php"><button>Masuk ke halaman admin</button></a>
 </body>
 
 </html>
