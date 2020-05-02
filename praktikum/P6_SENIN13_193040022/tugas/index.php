@@ -57,9 +57,14 @@ if (isset($_POST['cari'])) {
     </h1>
 
     <form action="" method="POST">
-        <center><input type="text" name="keyword" size="20" placeholder="masukan pencarian.." autocomplete="off" autofocus>
+        <center><input type="text" name="keyword" size="25" placeholder="masukan pencarian.." autocomplete="off" autofocus>
             <button type="submit" name="cari">Cari!</button></center>
     </form>
+    <br>
+
+    <center><a href="php/admin.php">
+            <button>Masuk ke halaman admin</button>
+        </a></center>
     <br>
 
     <div class="container">
@@ -84,8 +89,6 @@ if (isset($_POST['cari'])) {
     <h1>
         <center>TERIMAKASIH SUDAH MEMESAN!</center>
     </h1>
-
-    <a href="php/admin.php"><button>Masuk ke halaman admin</button></a>
 </body>
 
 </html>
