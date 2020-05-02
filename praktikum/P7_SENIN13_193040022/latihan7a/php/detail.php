@@ -21,7 +21,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latihan6d</title>
+    <title>latihan7a</title>
     <style>
         .container {
             border: 3px solid #4B0082;
