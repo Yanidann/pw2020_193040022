@@ -16,7 +16,7 @@ if (isset($_POST['cari'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>latihan 7a</title>
+    <title>latihan 7b</title>
 
     <style>
         .container {
