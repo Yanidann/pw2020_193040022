@@ -35,40 +35,49 @@ $mkn = query("SELECT * FROM makanan WHERE id = $id")[0];
 
         img {
             height: 200px;
+            width: 300px;
         }
 
-        .card {
-            position: absolute;
-            left: 550px;
-            top: 50px;
-            text-align: center;
+        .container {
+            width: 350px;
+            min-height: 350px;
+            border: #CCC solid 1px;
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 50px auto;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 
 <body>
-    <div class="card" style="width: 18rem;">
-        <img src="../assets/img/<?= $mkn["gambar"]; ?>" alt="">
-        <div class="card-body">
-            <div class="keterangan">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <p><?= $mkn["nama"]; ?></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><?= $mkn["asal"]; ?></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><?= $mkn["bahan"]; ?></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p><?= $mkn["harga"]; ?></p>
-                    </li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="../assets/img/<?= $mkn["gambar"]; ?>" alt="">
+                <div class="card-body">
+                    <div class="keterangan">
+                        <ul class="list-group list-group-flush" style="text-align: center;">
+                            <li class="list-group-item">
+                                <p><?= $mkn["nama"]; ?></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><?= $mkn["asal"]; ?></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><?= $mkn["bahan"]; ?></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><?= $mkn["harga"]; ?></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="../index.php" class="btn btn-primary btn-sm btn-block">Kembali</a>
+                </div>
             </div>
-            <a href="../index.php" class="btn btn-primary">Kembali</a>
         </div>
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

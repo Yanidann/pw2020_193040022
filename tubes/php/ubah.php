@@ -44,50 +44,65 @@ if (isset($_POST['ubah'])) {
       background: darkorange;
     }
 
-    form {
-      width: 300px;
-      position: absolute;
-      left: 550px;
-      top: 60px;
+    .container {
+      width: 350px;
+      min-height: 350px;
+      border: #CCC solid 1px;
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
     }
 
-    h3 {
+    h1 {
       text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="col-md-12 p-5 pt-2">
-    <form action="" method="POST">
-      <h3>Form Ubah Daftar Makanan</h3>
-      <input type="hidden" name="id" id="id" value="<?= $m['id']; ?>">
-      <div class="form-group">
-        <label for="gambar">Gambar:</label>
-        <input type="text" class="form-control" name="gambar" id="gambar" required>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="login">
+          <h1><i class="fa fa-key fa-fw"></i>Form Ubah Daftar Makanan</h1>
+          <hr>
+
+          <!-- start form login -->
+          <form action="" method="post">
+            <div class="form-group">
+              <div class="form-group">
+                <label for="gambar">Gambar :</label>
+                <input type="text" class="form-control" name="gambar" id="gambar" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                <label for="nama">Nama Makanan :</label>
+                <input type="text" class="form-control" name="nama" id="nama" required>
+              </div>
+              <div class="form-group">
+                <label for="asal">Asal Makanan:</label>
+                <input type="text" class="form-control" name="asal" id="asal" required>
+              </div>
+              <div class="form-group">
+                <label for="bahan">Bahan Makanan:</label>
+                <input type="text" class="form-control" name="bahan" id="bahan" required>
+              </div>
+              <div class="form-group">
+                <label for="harga">Harga:</label>
+                <input type="text" class="form-control" name="harga" id="harga" required>
+              </div>
+              <hr>
+              <button type="submit" class="btn btn-primary" name="ubah">Ubah Data!</button>
+              <button type="submit" class="btn btn-primary bg-light">
+                <a href="admin.php" style="text-decoration: none; color: black;">Kembali</a>
+              </button>
+          </form>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="nama">Nama Makanan:</label>
-        <input type="text" class="form-control" name="nama" id="nama" required>
-      </div>
-      <div class="form-group">
-        <label for="asal">Asal Makanan:</label>
-        <input type="text" class="form-control" name="asal" id="asal" required>
-      </div>
-      <div class="form-group">
-        <label for="bahan">Bahan Makanan:</label>
-        <input type="text" class="form-control" name="bahan" id="bahan" required>
-      </div>
-      <div class="form-group">
-        <label for="harga">Harga:</label>
-        <input type="text" class="form-control" name="harga" id="harga" required>
-      </div>
-      <button type="submit" class="btn btn-primary" name="ubah">Ubah Data!</button>
-      <button type="submit" class="btn btn-primary bg-light">
-        <a href="admin.php" style="text-decoration: none; color: black;">Kembali</a>
-      </button>
-  </div>
-  </form>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->

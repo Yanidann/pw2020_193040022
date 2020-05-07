@@ -63,51 +63,65 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <title>Halaman Login</title>
+
   <style>
     body {
       background: darkorange;
     }
 
-    form {
-      width: 300px;
-      position: absolute;
-      left: 550px;
-      top: 150px;
+    .container {
+      width: 350px;
+      min-height: 350px;
+      border: #CCC solid 1px;
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 100px auto;
+      box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
     }
 
-    h3 {
+    h1 {
       text-align: center;
     }
   </style>
-
 </head>
 
 <body>
-  <div class="col-md-12 p-5 pt-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="login">
+          <h1><i class="fa fa-key fa-fw"></i>LOGIN</h1>
+          <hr>
 
-    <form action="" method="POST">
-      <h3>Login</h3>
-      <?php if (isset($error)) : ?>
-        <p style="color: red; font-style: italic;">Username atau Password salah</p>
-      <?php endif; ?>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" class="form-control" name="username">
+          <!-- start form login -->
+          <form action="" method="post">
+            <?php if (isset($error)) : ?>
+              <p style="color: red; font-style: italic; text-align: center;">Username atau Password salah</p>
+            <?php endif; ?>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-group  input-group-sm">
+                <input type="password" class="form-control" name="password">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" name="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+              </div>
+              <div class="registrasi">
+                <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a></p>
+              </div>
+            </div>
+            <hr>
+            <button class="btn btn-primary btn-sm btn-block" type="submit" name="submit">Login</button>
+          </form>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" name="password">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" name="remember">
-        <label class="form-check-label" for="remember">Remember me</label>
-      </div>
-      <button type="submit" class="btn btn-primary" name="submit">Login</button>
-      <div class="registrasi">
-        <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a></p>
-      </div>
-  </div>
-  </form>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->

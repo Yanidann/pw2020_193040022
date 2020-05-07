@@ -29,27 +29,10 @@ if (isset($_POST['cari'])) {
 
   <title>HALAMAN ADMIN</title>
   <style>
-    table {
-      background: white;
-      position: absolute;
-      left: 300px;
-    }
-
     img {
       width: 100px;
       height: 100px;
       border: 2px solid darkorange;
-    }
-
-    th {
-      background: darkorange;
-      text-align: center;
-    }
-
-    button {
-      background: darkorange;
-      color: black;
-      font-size: medium;
     }
   </style>
 
@@ -57,65 +40,71 @@ if (isset($_POST['cari'])) {
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-    <a class="navbar-brand" href="#">HALAMAN ADMIN</a>
-
-    <form class="form-inline my-2 my-lg-0 ml-auto" action="" method="POST">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" type="text" name="keyword">
-      <button class=" btn btn-outline-secondary my-2 my-sm-0" type="submit" name="cari">Search</button>
-    </form>
-
-    <!-- ikon -->
-    <div class="icon">
-      <div class="icon2 pl-2">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="tambah.php">Tambah Data</a>
-          </li>
-          <li class="nav-item">
-            <a href="logout.php" class="nav-link active">Logout</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">HALAMAN ADMIN</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      </ul>
+      <form class="form-inline my-2 my-lg-0" action="" method="POST">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" type="text" name="keyword">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="cari">Search</button>
+      </form>
+      <ul class="nav nav-pills card-header-pills pl-3">
+        <li class="nav-item">
+          <a class="nav-link" href="tambah.php">Tambah Data</a>
+        </li>
+        <li class="nav-item">
+          <a href="logout.php" class="nav-link active">Logout</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="col-md-12 p-5 pt-2 mt-5">
-    <table border="1" cellpadding="13" cellspacing="0">
-      <tr>
-        <th>No</th>
-        <th>Opsi</th>
-        <th>Gambar</th>
-        <th>Nama Makanan</th>
-        <th>Asal Makanan</th>
-        <th>Bahan Makanan</th>
-        <th>Harga</th>
-      </tr>
-
-      <?php if (empty($makanan)) : ?>
-        <tr>
-          <td colspan="7">
-            <h1 style="color: red; font-style: italic;">Data tidak ditemukan</h1>
-          </td>
+  <!-- table -->
+  <div class="table-responsive m-2" style="block-size: 550px;">
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr style="text-align: center;">
+          <th>No</th>
+          <th>Opsi</th>
+          <th>Gambar</th>
+          <th>Nama Makanan</th>
+          <th>Asal Makanan</th>
+          <th>Bahan Makanan</th>
+          <th>Harga</th>
         </tr>
-      <?php endif; ?>
+      </thead>
+      <tbody>
+        <?php if (empty($makanan)) : ?>
+          <tr>
+            <td colspan="7">
+              <h1 style="color: red; font-style: italic; text-align: center;">Data tidak ditemukan</h1>
+            </td>
+          </tr>
+        <?php endif; ?>
 
-      <?php $i = 1; ?>
-      <?php foreach ($makanan as $m) : ?>
-        <tr>
-          <td><?= $i++; ?></td>
-          <td>
-            <a href=" ubah.php?id=<?= $m['id']; ?>"><button>Ubah</button></a>
-            <a href="hapus.php?id=<?= $m['id']; ?>" onclick="return confirm('Hapus Data??')"><button>Hapus</button></a>
-          </td>
-          <td><img src="../assets/img/<?= $m['gambar']; ?>"></td>
-          <td><?= $m['nama']; ?></td>
-          <td><?= $m['asal']; ?></td>
-          <td><?= $m['bahan']; ?></td>
-          <td><?= $m['harga']; ?></td>
-        </tr>
-      <?php endforeach; ?>
+        <?php $i = 1; ?>
+        <?php foreach ($makanan as $m) : ?>
+          <tr style="text-align: center;">
+            <td><?= $i++; ?></td>
+            <td>
+              <a href=" ubah.php?id=<?= $m['id']; ?>"><button style="background-color: darkorange;">Ubah</button></a>
+              <a href="hapus.php?id=<?= $m['id']; ?>" onclick="return confirm('Hapus Data??')"><button style="background-color: darkorange;">Hapus</button></a>
+            </td>
+            <td><img src="../assets/img/<?= $m['gambar']; ?>"></td>
+            <td><?= $m['nama']; ?></td>
+            <td><?= $m['asal']; ?></td>
+            <td><?= $m['bahan']; ?></td>
+            <td><?= $m['harga']; ?></td>
+          </tr>
+        <?php endforeach; ?>
+      </tbody>
     </table>
   </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -21,7 +21,8 @@ if (isset($_POST['cari'])) {
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <title>SELAMAT DATANG</title>
+  <title>YNNWS</title>
+
 
   <style>
     .container {
@@ -58,31 +59,28 @@ if (isset($_POST['cari'])) {
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-    <a class="navbar-brand" href="#">SELAMAT DATANG</a>
-
-    <form class="form-inline my-2 my-lg-0 ml-auto" action="" method="POST">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" type="text" name="keyword">
-      <button class=" btn btn-outline-secondary my-2 my-sm-0" type="submit" name="cari">Search</button>
-    </form>
-
-    <!-- ikon -->
-    <div class="icon">
-      <div class="icon2 pl-4">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <a href="php/login.php" class="nav-link active">Login</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">SELAMAT DATANG</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      </ul>
+      <form class="form-inline my-2 my-lg-0" action="" method="POST">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" type="text" name="keyword">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="cari">Search</button>
+      </form>
+      <ul class="nav nav-pills card-header-pills pl-3">
+        <li class="nav-item">
+          <a href="php/login.php" class="nav-link active">Login</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
-  <div class="col-md-12 p-5 pt-2" style="text-align: center">
-    <br>
-    <br>
-    <br>
+  <div class="col-md-12 p-5 pt-2" style="text-align: center;">
     <h1><i class="mr-2"></i>DAFTAR MAKANAN</h1>
-    <br>
     <br>
     <div class="container">
       <?php if (empty($makanan)) : ?>
@@ -105,6 +103,11 @@ if (isset($_POST['cari'])) {
       <?php endforeach; ?>
     </div>
   </div>
+
+  <div class="alert alert-dark" role="alert">
+    <p align="center">&#169;2020 Daftar Makanan by Yanida Nur Nabila</p>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
