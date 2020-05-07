@@ -30,12 +30,12 @@ if (isset($_POST["register"])) {
       <tr>
         <td><label for="username">username</label></td>
         <td>:</td>
-        <td><input type="text" name="username"></td>
+        <td><input type="text" name="username" required></td>
       </tr>
       <tr>
         <td><label for="password">password</label></td>
         <td>:</td>
-        <td><input type="password" name="password"></td>
+        <td><input type="password" name="password" required></td>
       </tr>
     </table>
     <button type="submit" name="register">REGISTER</button>
