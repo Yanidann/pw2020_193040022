@@ -33,6 +33,7 @@ if (isset($_POST['cari'])) {
       width: 100px;
       height: 100px;
       border: 2px solid darkorange;
+      border-radius: 20px;
     }
   </style>
 
@@ -50,11 +51,11 @@ if (isset($_POST['cari'])) {
       </ul>
       <form class="form-inline my-2 my-lg-0" action="" method="POST">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" type="text" name="keyword">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="cari">Search</button>
+        <button class="btn btn-outline-secondary my-2 my-sm-0 bg-secondary text-light" type="submit" name="cari">Search</button>
       </form>
       <ul class="nav nav-pills card-header-pills pl-3">
         <li class="nav-item">
-          <a class="nav-link" href="tambah.php">Tambah Data</a>
+          <a class="nav-link active bg-success ml-1 mr-2" href=" tambah.php">Tambah Data</a>
         </li>
         <li class="nav-item">
           <a href="logout.php" class="nav-link active">Logout</a>
@@ -64,7 +65,7 @@ if (isset($_POST['cari'])) {
   </nav>
 
   <!-- table -->
-  <div class="table-responsive m-2" style="block-size: 550px;">
+  <div class="table-responsive m-2" style="block-size: 600px;">
     <table class="table table-bordered">
       <thead class="thead-dark">
         <tr style="text-align: center;">

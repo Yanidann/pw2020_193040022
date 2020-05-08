@@ -69,7 +69,7 @@ if (isset($_POST['cari'])) {
       </ul>
       <form class="form-inline my-2 my-lg-0" action="" method="POST">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" type="text" name="keyword">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="cari">Search</button>
+        <button class="btn btn-outline-secondary my-2 my-sm-0 bg-secondary text-light" type="submit" name="cari">Search</button>
       </form>
       <ul class="nav nav-pills card-header-pills pl-3">
         <li class="nav-item">
@@ -79,44 +79,46 @@ if (isset($_POST['cari'])) {
     </div>
   </nav>
 
-  <div class="col-md-12 p-5 pt-2" style="text-align: center;">
-    <h1><i class="mr-2"></i>DAFTAR MAKANAN</h1>
-    <br>
-    <div class="container">
-      <?php if (empty($makanan)) : ?>
-        <tr>
-          <td colspan="4">
-            <center>
-              <h1 style="color: red; font-style: italic; font-size: large;">Data tidak ditemukan</h1>
-            </center>
-          </td>
-        </tr>
-      <?php endif; ?>
+  <body>
+    <div class="col-md-12 p-5 pt-2" style="text-align: center;">
+      <h1><i class="mr-2"></i>DAFTAR MAKANAN</h1>
+      <br>
+      <div class="container">
+        <?php if (empty($makanan)) : ?>
+          <tr>
+            <td colspan="4">
+              <center>
+                <h1 style="color: red; font-style: italic; font-size: large;">Data tidak ditemukan</h1>
+              </center>
+            </td>
+          </tr>
+        <?php endif; ?>
 
 
-      <?php foreach ($makanan as $mkn) : ?>
-        <div class="nama">
-          <a href="php/detail.php?id=<?= $mkn['id']; ?>">
-            <?= $mkn["nama"]; ?>
-          </a>
-        </div>
-      <?php endforeach; ?>
+        <?php foreach ($makanan as $mkn) : ?>
+          <div class="nama">
+            <a href="php/detail.php?id=<?= $mkn['id']; ?>">
+              <?= $mkn["nama"]; ?>
+            </a>
+          </div>
+        <?php endforeach; ?>
+      </div>
     </div>
-  </div>
 
-  <div class="alert alert-dark" role="alert">
-    <p align="center">&#169;2020 Daftar Makanan by Yanida Nur Nabila</p>
-  </div>
+    <footer>
+      <div class="alert alert-dark" role="alert">
+        <p align="center">&#169;2020 Daftar Makanan by Yanida Nur Nabila</p>
+      </div>
+    </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  <!-- javascript -->
-  <script type="text/javascript" src="java.js"></script>
-</body>
+    <!-- javascript -->
+    <script type="text/javascript" src="java.js"></script>
+  </body>
 
 </html>

@@ -36,6 +36,7 @@ $mkn = query("SELECT * FROM makanan WHERE id = $id")[0];
         img {
             height: 200px;
             width: 300px;
+            border-radius: 20px;
         }
 
         .container {
@@ -46,6 +47,7 @@ $mkn = query("SELECT * FROM makanan WHERE id = $id")[0];
             padding: 20px;
             margin: 50px auto;
             box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
         }
     </style>
 </head>
@@ -72,7 +74,7 @@ $mkn = query("SELECT * FROM makanan WHERE id = $id")[0];
                             </li>
                         </ul>
                     </div>
-                    <a href="../index.php" class="btn btn-primary btn-sm btn-block">Kembali</a>
+                    <a href="../index.php" class="btn btn-success btn-sm btn-block" style="border-radius: 20px;">Kembali</a>
                 </div>
             </div>
         </div>
