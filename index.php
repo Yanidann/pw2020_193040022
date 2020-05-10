@@ -18,12 +18,39 @@
       box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
       border-radius: 20px;
     }
+
+    /* Info Panel */
+    .info-panel {
+      background-color: white;
+      padding: 30px;
+      margin-top: -120px;
+      border-radius: 12px;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .info-panel h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .info-panel p {
+      font-size: 14px;
+      font-weight: lighter;
+      color: #acacac;
+    }
+
+    .info-panel img {
+      width: 110px;
+      height: 100px;
+    }
   </style>
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="#">193040022</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +60,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#profile">Profile</a>
@@ -51,7 +78,10 @@
         <form class="form-inline my-2 my-lg-0">
           <ul class="nav nav-pills card-header-pills pl-3">
             <li class="nav-item">
-              <a class="nav-link active">Login</a>
+              <a class="nav-link active">Sign up</a>
+            </li>
+            <li class="nav-item pl-2">
+              <a class="nav-link text-dark bg-light">Log in</a>
             </li>
           </ul>
         </form>
@@ -59,32 +89,70 @@
     </div>
   </nav>
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-      <img src="assets/img/yanida.jpg" width="25%" class="rounded-circle img-thumbnail">
-      <h1 class="display-4">Yanida Nur Nabila</h1>
-      <p class="lead">Selamat Datang di Teknik Informatika UNPAS.</p>
+  <!-- home -->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+          <br><br><br><br><br>
+          <h1 class="display-4" style="text-align: left;">Selamat Datang</h1>
+          <br>
+          <p style="text-align: left;">Halaman ini menampilkan <b>Profile</b>, <b>Tugas Kuliah</b>, <b>Tugas Praktikum</b>, dan <b>Tugas Besar</b></p>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="assets/img/1.png" width=100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- info panel -->
+  <div class="row justify-content-center">
+    <div class="col-7 info-panel">
+      <div class="row">
+        <div class="col-sm">
+          <img src="assets/img/kuliah.png" alt="kuliah" class="img-fluid float-left">
+          <h4>Kuliah</h4>
+          <p>Tugas Kuliah</p>
+        </div>
+        <div class="col-lg">
+          <img src="assets/img/praktikum.png" alt="praktikum" class="img-fluid float-left">
+          <h4>Praktikum</h4>
+          <p>Tugas Praktikum</p>
+        </div>
+        <div class="col-lg">
+          <img src="assets/img/tubes.png" alt="tubes" class="img-fluid float-left">
+          <h4>Tugas Besar</h4>
+          <p>Tugas Besar</p>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <!-- profile -->
   <section id="profile" class="profile">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-5 text-center">
+          <br>
+          <br>
           <img src="assets/img/yanida.jpg" width=50%" class="rounded-box img-thumbnail">
         </div>
         <div class="col-md-5 text-center">
-          <h2>Yanida Nur Nabila Widya Sastra</h2>
           <br>
-          <p>Saya adalah seorang mahasiswa Teknik Informatika yang sedang menempuh pendidikan di Universitas Pasundan</p>
+          <br>
+          <h2 style="text-align: left">Yanida Nur Nabila Widya Sastra</h2>
+          <br>
+          <p>Saya adalah mahasiswa jurusan Teknik Informatika yang sedang menempuh pendidikan di Universitas Pasundan</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- kelas -->
-  <section id="kuliah" class="kuliah">
+  <!-- kuliah -->
+  <section id="kuliah" class="kuliah" style="background-color: Gainsboro;">
     <div class=" container">
       <div class="row mb-4">
       </div>
@@ -119,9 +187,7 @@
         </div>
 
         <div class="col-md-5 text-center">
-          <h2>Yanida Nur Nabila Widya Sastra</h2>
-          <br>
-          <p>Saya adalah seorang mahasiswa Teknik Informatika yang sedang menempuh pendidikan di Universitas Pasundan</p>
+          <img src="assets/img/kuliah.png" style="width: 100%;">
         </div>
       </div>
     </div>
@@ -168,16 +234,14 @@
         </div>
 
         <div class="col-md-5 text-center">
-          <h2>Yanida Nur Nabila Widya Sastra</h2>
-          <br>
-          <p>Saya adalah seorang mahasiswa Teknik Informatika yang sedang menempuh pendidikan di Universitas Pasundan</p>
+          <img src="assets/img/praktikum.png" width=100%">
         </div>
       </div>
     </div>
   </section>
 
   <!-- tubes -->
-  <section id="tubes" class="tubes bg-warning">
+  <section id="tubes" class="tubes" style="background-color: Gainsboro;">
     <div class=" container">
       <div class="row mb-4">
       </div>
@@ -185,6 +249,7 @@
         <div class="col-md-5 text-center">
           <table class="table">
             <thead class="thead-dark">
+              <br><br><br><br><br>
               <h2>Tugas Besar</h2>
               <tr>
                 <th scope="col">Repositories</th>
@@ -192,16 +257,14 @@
             </thead>
             <tbody>
               <tr>
-                <td><a href="tubes">tubes</a></td>
+                <td><a href="tubes">Tugas Besar</a></td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div class="col-md-5 text-center">
-          <h2>Yanida Nur Nabila Widya Sastra</h2>
-          <br>
-          <p>Saya adalah seorang mahasiswa Teknik Informatika yang sedang menempuh pendidikan di Universitas Pasundan</p>
+          <img src="assets/img/tubes.png" width=100%">
         </div>
       </div>
     </div>
@@ -213,6 +276,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
