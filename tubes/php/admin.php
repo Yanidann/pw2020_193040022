@@ -93,7 +93,7 @@ if (isset($_POST['cari'])) {
             <td><?= $i++; ?></td>
             <td>
               <a href=" ubah.php?id=<?= $m['id']; ?>"><button style="background-color: darkorange;">Ubah</button></a>
-              <a href="hapus.php?id=<?= $m['id']; ?>" onclick="return confirm('Hapus Data??')"><button style="background-color: darkorange;">Hapus</button></a>
+              <a href="hapus.php?id=<?= $m['id']; ?>" onclick="return confirm('Hapus Data?')"><button style="background-color: darkorange;">Hapus</button></a>
             </td>
             <td><img src="../assets/img/<?= $m['gambar']; ?>"></td>
             <td><?= $m['nama']; ?></td>
