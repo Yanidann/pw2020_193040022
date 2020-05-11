@@ -136,16 +136,15 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-5 text-center">
-          <br>
-          <br>
+          <br><br><br>
           <img src="assets/img/yanida.jpg" width=50%" class="rounded-box img-thumbnail">
+          <br><br><br>
         </div>
         <div class="col-md-5 text-center">
-          <br>
-          <br>
+          <br><br><br>
           <h2 style="text-align: left">Yanida Nur Nabila Widya Sastra</h2>
           <br>
-          <p>Saya adalah mahasiswa jurusan Teknik Informatika yang sedang menempuh pendidikan di Universitas Pasundan</p>
+          <p style="text-align: left">Saya adalah mahasiswa jurusan <b>Teknik Informatika</b> yang sedang menempuh pendidikan di <b>Universitas Pasundan</b></p>
         </div>
       </div>
     </div>
@@ -180,7 +179,7 @@
                 <td><a href="kuliah/pertemuan12">Pertemuan 12</td>
               </tr>
               <tr>
-                <td>Pertemuan 13</td>
+                <td><a href="kuliah/pertemuan13">Pertemuan 13</td>
               </tr>
             </tbody>
           </table>
