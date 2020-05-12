@@ -67,6 +67,10 @@ if (isset($_POST['cari'])) {
       <a class="navbar-brand" href="#">193040022</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       </ul>
+      <form action="" method="POST">
+        <input type="text" name="keyword" size="20" placeholder="pencarian.." autocomplete="off" autofocus class="keyword">
+        <button type="submit" name="cari" class="tombol-cari">Cari!</button>
+      </form>
       <ul class="nav nav-pills card-header-pills pl-3">
         <li class="nav-item">
           <a href="php/login.php" class="nav-link active">Login</a>
@@ -78,12 +82,6 @@ if (isset($_POST['cari'])) {
 
   <div class="col-md-12 p-5 pt-2" style="text-align: center;">
     <h1><i class="mr-2"></i>DAFTAR MAKANAN</h1>
-    <br>
-
-    <form action="" method="POST">
-      <input type="text" name="keyword" size="40" placeholder="masukan keyword pencarian.." autocomplete="off" autofocus class="keyword">
-      <button type="submit" name="cari" class="tombol-cari">Cari!</button>
-    </form>
     <br>
 
     <div class="container">
@@ -112,7 +110,7 @@ if (isset($_POST['cari'])) {
 
   <footer>
     <br>
-    <div class="alert alert-dark" role="alert">
+    <div>
       <p align="center">&#169;2020 Daftar Makanan by Yanida Nur Nabila</p>
     </div>
   </footer>
