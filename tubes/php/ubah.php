@@ -1,11 +1,4 @@
 <?php
-session_start();
-
-if (!isset($_SESSION["username"])) {
-  header("Location: login.php");
-  exit;
-}
-
 require 'functions.php';
 
 $id = $_GET['id'];
@@ -37,7 +30,7 @@ if (isset($_POST['ubah'])) {
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <title>Halaman Ubah Form</title>
+  <title>halaman ubah form</title>
 
   <style>
     body {
@@ -59,6 +52,7 @@ if (isset($_POST['ubah'])) {
       text-align: center;
     }
   </style>
+
 </head>
 
 <body>
@@ -71,28 +65,29 @@ if (isset($_POST['ubah'])) {
 
           <!-- start form login -->
           <form action="" method="post">
+            <input type="hidden" name="id" id="id" value="<?= $m['id']; ?>">
             <div class="form-group">
               <div class="form-group">
                 <label for="gambar">Gambar :</label>
-                <input type="text" class="form-control" name="gambar" id="gambar" required>
+                <input type="text" class="form-control" name="gambar" id="gambar" required value="<?= $m['gambar']; ?>">
               </div>
             </div>
             <div class="form-group">
               <div class="form-group">
                 <label for="nama">Nama Makanan :</label>
-                <input type="text" class="form-control" name="nama" id="nama" required>
+                <input type="text" class="form-control" name="nama" id="nama" required value="<?= $m['nama']; ?>">
               </div>
               <div class="form-group">
                 <label for="asal">Asal Makanan:</label>
-                <input type="text" class="form-control" name="asal" id="asal" required>
+                <input type="text" class="form-control" name="asal" id="asal" required value="<?= $m['asal']; ?>">
               </div>
               <div class="form-group">
                 <label for="bahan">Bahan Makanan:</label>
-                <input type="text" class="form-control" name="bahan" id="bahan" required>
+                <input type="text" class="form-control" name="bahan" id="bahan" required value="<?= $m['bahan']; ?>">
               </div>
               <div class="form-group">
                 <label for="harga">Harga:</label>
-                <input type="text" class="form-control" name="harga" id="harga" required>
+                <input type="text" class="form-control" name="harga" id="harga" required value="<?= $m['harga']; ?>">
               </div>
               <hr>
               <button type="submit" class="btn btn-primary" name="ubah">Ubah Data!</button>
@@ -113,6 +108,7 @@ if (isset($_POST['ubah'])) {
 
   <!-- javascript -->
   <script type="text/javascript" src="java.js"></script>
+
 </body>
 
 </html>

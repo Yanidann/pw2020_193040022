@@ -67,11 +67,11 @@ if (isset($_POST['tambah'])) {
           <hr>
 
           <!-- start form login -->
-          <form action="" method="POST" enctype="multipart/form-data">
+          <form action="" method="post">
             <div class="form-group">
               <div class="form-group">
                 <label for="gambar">Gambar :</label>
-                <input type="file" class="form-control" name="gambar" id="gambar">
+                <input type="text" class="form-control" name="gambar" id="gambar" required>
               </div>
             </div>
             <div class="form-group">
