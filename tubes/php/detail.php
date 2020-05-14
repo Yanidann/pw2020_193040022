@@ -56,7 +56,7 @@ $mkn = query("SELECT * FROM makanan WHERE id = $id")[0];
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img src="../assets/img/<?= $mkn["gambar"]; ?>" alt="">
+                <img src="../assets/img/<?= $mkn["gambar"]; ?>" width="250">
                 <div class="card-body">
                     <div class="keterangan">
                         <ul class="list-group list-group-flush" style="text-align: center;">
