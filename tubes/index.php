@@ -66,12 +66,14 @@ if (isset($_POST['cari'])) {
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <a class="navbar-brand" href="#">193040022</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#daftar makanan">Daftar Makanan</a>
+        </li>
       </ul>
-      <form action="" method="POST">
-        <input type="text" name="keyword" size="20" placeholder="pencarian.." autocomplete="off" autofocus class="keyword">
-        <button type="submit" name="cari" class="tombol-cari">Cari!</button>
-      </form>
-      <ul class="nav nav-pills card-header-pills pl-3">
+      <ul class="nav nav-pills card-header-pills pl-4">
         <li class="nav-item">
           <a href="php/login.php" class="nav-link active">Login</a>
         </li>
@@ -79,9 +81,31 @@ if (isset($_POST['cari'])) {
     </div>
   </nav>
 
+  <!-- home -->
+  <section id="home" class="home">
+    <div class="header" style="background-color: Gainsboro;">
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+          <br><br><br><br><br>
+          <h1 class="display-4" style="text-align: left; font-size: 60px;"><b>Selamat Datang</b></h1>
+          <br>
+          <p style=" text-align: left; font-size: 20px;">Halaman ini menampilka <b>Daftar Makanan</b> dari bermacam-macam daerah</p>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="col-md-4 mt-5 text-center">
+          <img src="assets/img/makanan.png" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="col-md-12 p-5 pt-2" style="text-align: center;">
+  <div class="col-md-12 p-5" id="daftar makanan" style="text-align: center;">
     <h1><i class="mr-2"></i>DAFTAR MAKANAN</h1>
+    <br>
+    <form action="" method="POST">
+      <input type="text" name="keyword" size="50" placeholder="Search..." autocomplete="off" autofocus class="keyword">
+      <button type="submit" name="cari" class="tombol-cari">Cari!</button>
+    </form>
     <br>
 
     <div class="container">
