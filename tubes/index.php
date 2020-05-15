@@ -75,7 +75,7 @@ if (isset($_POST['cari'])) {
       </ul>
       <ul class="nav nav-pills card-header-pills pr-5">
         <li class="nav-item">
-          <a href="php/login.php" class="nav-link active">Login</a>
+          <a href="php/login.php" class="nav-link active" style="font-size: 17px;">Login</a>
         </li>
       </ul>
     </div>
