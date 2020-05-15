@@ -67,13 +67,13 @@ if (isset($_POST['cari'])) {
       <a class="navbar-brand" href="#">193040022</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="#home" style="font-size: 20px;">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#daftar makanan">Daftar Makanan</a>
+          <a class="nav-link" href="#daftar makanan" style="font-size: 20px;">Daftar Makanan</a>
         </li>
       </ul>
-      <ul class="nav nav-pills card-header-pills pl-4">
+      <ul class="nav nav-pills card-header-pills pr-5">
         <li class="nav-item">
           <a href="php/login.php" class="nav-link active">Login</a>
         </li>
