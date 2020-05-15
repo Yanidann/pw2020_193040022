@@ -95,9 +95,9 @@
       <div class="row justify-content-center">
         <div class="col-md-5 text-center">
           <br><br><br><br><br>
-          <h1 class="display-4" style="text-align: left;">Selamat Datang</h1>
+          <h1 class="display-4" style="text-align: left; font-size: 60px;"><b>Selamat Datang</b></h1>
           <br>
-          <p style="text-align: left;">Halaman ini menampilkan <b>Profile</b>, <b>Tugas Kuliah</b>, <b>Tugas Praktikum</b>, dan <b>Tugas Besar</b></p>
+          <p style=" text-align: left; font-size: 20px;">Halaman ini menampilkan <b>Profile</b>, <b>Tugas Kuliah</b>, <b>Tugas Praktikum</b>, dan <b>Tugas Besar</b></p>
           <br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
         <div class="col-md-5 text-center">
@@ -142,9 +142,9 @@
         </div>
         <div class="col-md-5 text-center">
           <br><br><br>
-          <h2 style="text-align: left">Yanida Nur Nabila Widya Sastra</h2>
+          <h2 style="text-align: left; font-size: 38px;">Yanida Nur Nabila Widya Sastra</h2>
           <br>
-          <p style="text-align: left">Saya adalah mahasiswa jurusan <b>Teknik Informatika</b> yang sedang menempuh pendidikan di <b>Universitas Pasundan</b></p>
+          <p style="text-align: left; font-size: 18px;">Saya adalah mahasiswa jurusan <b>Teknik Informatika</b> yang sedang menempuh pendidikan di <b>Universitas Pasundan</b></p>
         </div>
       </div>
     </div>
@@ -160,32 +160,36 @@
         <div class="col-md-5 text-center">
           <table class="table">
             <thead class="thead-dark">
-              <h2>Tugas Kuliah</h2>
-              <tr>
+              <br>
+              <h2 style="font-size: 38px;">Tugas Kuliah</h2>
+              <br>
+              <p style="text-align: center; font-size: 20px;"><b>Username:</b> admin <b>Password:</b> 12345</p>
+              <br>
+              <tr style="font-size: 20px;">
                 <th scope="col">Repositories</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="kuliah/pertemuan9">Pertemuan 9</a></td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="kuliah/pertemuan10">Pertemuan 10</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="kuliah/pertemuan11">Pertemuan 11</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="kuliah/pertemuan12">Pertemuan 12</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="kuliah/pertemuan13">Pertemuan 13</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 ml-5 text-center">
           <img src="assets/img/kuliah.png" style="width: 100%;">
         </div>
       </div>
@@ -201,38 +205,42 @@
         <div class="col-md-5 text-center">
           <table class="table">
             <thead class="thead-dark">
-              <h2>Tugas Praktikum</h2>
-              <tr>
+              <br>
+              <h2 style="font-size: 38px;">Tugas Praktikum</h2>
+              <br>
+              <p style="text-align: center; font-size: 20px;"><b>Username:</b> admin <b>Password:</b> admin</p>
+              <br>
+              <tr style="font-size: 20px;">
                 <th scope="col">Repositories</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><a href="praktikum/P1_SENIN13_193040022">P1_SENIN13_193040022</a></td>
+              <tr style="font-size: 20px;">
+                <td><a href=" praktikum/P1_SENIN13_193040022">P1_SENIN13_193040022 </a> </td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="praktikum/P2_SENIN13_193040022">P2_SENIN13_193040022</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="praktikum/P3_SENIN13_193040022">P3_SENIN13_193040022</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="praktikum/P4_SENIN13_193040022">P4_SENIN13_193040022</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="praktikum/P5_SENIN13_193040022">P5_SENIN13_193040022</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="praktikum/P6_SENIN13_193040022">P6_SENIN13_193040022</td>
               </tr>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="praktikum/P7_SENIN13_193040022">P7_SENIN13_193040022</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 ml-5 text-center">
           <img src="assets/img/praktikum.png" width=100%">
         </div>
       </div>
@@ -248,21 +256,24 @@
         <div class="col-md-5 text-center">
           <table class="table">
             <thead class="thead-dark">
-              <br><br><br><br><br>
-              <h2>Tugas Besar</h2>
-              <tr>
-                <th scope="col">Repositories</th>
+              <br>
+              <h2 style="font-size: 38px;">Tugas Besar</h2>
+              <br>
+              <p style="text-align: left; font-size: 20px;">Untuk melihat semua fitur pada halaman admin silahkan gunakan akun dengan</p>
+              <p style="text-align: left; font-size: 20px;"><b>Username:</b> admin <b>Password:</b> admin</p>
+              <tr style="font-size: 20px;">
+                <th scope=" col">Repositories</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr style="font-size: 20px;">
                 <td><a href="tubes">Tugas Besar</a></td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 ml-5 text-center">
           <img src="assets/img/tubes.png" width=100%">
         </div>
       </div>
