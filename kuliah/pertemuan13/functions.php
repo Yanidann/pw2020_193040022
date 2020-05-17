@@ -37,7 +37,7 @@ function upload()
     // echo "<script>
     //         alert('pilih gambar terlebih dahulu!');
     //       </script>";
-    return 'nophoto.jpg';
+    return 'nophoto.png';
   }
 
   // cek ekstensi file
@@ -113,7 +113,7 @@ function hapus($id)
 
   // menghapus gambar di folder img
   $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
-  if ($mhs['gambar'] != 'nophoto.jpg') {
+  if ($mhs['gambar'] != 'nophoto.png') {
     unlink('img/' . $mhs['gambar']);
   }
 
@@ -139,7 +139,7 @@ function ubah($data)
     return false;
   }
 
-  if ($gambar == 'nophoto.jpg') {
+  if ($gambar == 'nophoto.png') {
     $gambar = $gambar_lama;
   }
 
